@@ -74,7 +74,7 @@ void main() async {
     if (response.statusCode == 200) {
       return Pokemon.fromJson(jsonDecode(response.body));
     } else {
-      throw Exception('FAiled to load Pokemon');
+      throw Exception('Failed to load Pokemon');
     }
   }
 
